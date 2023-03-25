@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NavBar</title>
+    <link rel="stylesheet" href="./Index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Navbar</div>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <div class="nav-bar">
+        <ul>
+          <li><a href="" class="active">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Feature</a></li>
+          <li><a href="">Pricing</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      hamburger.onclick = function () {
+        navbar = document.querySelector(".nav-bar");
+        navbar.classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>
